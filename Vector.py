@@ -3,30 +3,30 @@
 class Vector():
     """Создаём любой вектор"""
 
-    def __init__(self, initial_x, initial_y):
+    def __init__(self, x, y):
         """Задаём параметры нашего вектора"""
-        self.initial_x = initial_x
-        self.initial_y = initial_y
+        self.x = x
+        self.y = y
         
     def show_vector(self):
-        print(f'Координаты вектора: (x0={self.initial_x}, y0={self.initial_y})')
+        print(f'Координаты вектора: (x0={self.x}, y0={self.y})')
         print()
 
-    def set_coord(self, new_initial_x,new_initial_y):
+    def set_coord(self, new_x, new_y):
         """Задать новые начальные и коенчные координаты x вектора"""
-        self.initial_x = new_initial_x
-        self.initial_y = new_initial_y
+        self.x = new_x
+        self.y = new_y
 
-    def sum_vectors(self, initial_x2, initial_y2):
+    def sum_vectors(self, x2, y2):
         """Прибавить вектор к существующему"""
-        self.initial_x += initial_x2
-        self.initial_y += initial_y2
+        self.x += x2
+        self.y += y2
         print()
 
     def mult_vector(self, factor):
         """Умножить вектор на число"""
-        self.initial_x = self.initial_x * factor
-        self.initial_y = self.initial_y * factor
+        self.x = self.x * factor
+        self.y = self.y * factor
         print()
 
     # def vector_length(self):
@@ -34,9 +34,6 @@ class Vector():
     #     print(f'Длина вектора: {round(float(((self.finite_x - self.initial_x)**2 + (self.finite_y - self.initial_y)**2)**0.5), 2)}')
     #     print()
         
-kuka = Vector(2, 5)
-
-print(kuka.initial_x)
 
 # class Vector():
 #     """Создаём любой вектор"""
