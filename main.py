@@ -36,7 +36,7 @@ plt.title('Движение шаров') # заголовок
 plt.xlabel('x') # ось абсцисс
 plt.ylabel('y') # ось ординат
 plt.grid() # включение отображение сетки
-plt.plot(x, y, 'o-r', label='ball_1') # построение графика
+plt.plot(x, y, 'o--r', label='ball_1') # построение графика
 # plt.plot(x, y2, 'b--', label='ball_2')
 plt.legend(['ball_1']) # создание легенды
 plt.legend(loc='best') # лучшее расположение для легенды
